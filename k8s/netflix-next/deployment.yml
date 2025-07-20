@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: netflix-next-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: netflix-next
+  template:
+    metadata:
+      labels:
+        app: netflix-next
+    spec:
+      containers:
+        - name: netflix-next-container
+          image: 861111588204.dkr.ecr.ap-southeast-2.amazonaws.com/ai-call-center-deps-cache:e19d20e9df6de3f64f622c46c4f6315ce37b3097
+          ports:
+            - containerPort: 3000
+      imagePullSecrets:
+        - name: regcred
