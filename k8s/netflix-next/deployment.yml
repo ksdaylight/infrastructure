@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: netflix-next-container
-          image: 861111588204.dkr.ecr.ap-southeast-2.amazonaws.com/ai-call-center-deps-cache:e19d20e9df6de3f64f622c46c4f6315ce37b3097
+          image: 861111588204.dkr.ecr.ap-southeast-2.amazonaws.com/ai-call-center-deps-cache:a3fb44b280b2216d9e3a8ec1ace25dbf68172741
           ports:
             - containerPort: 3000
       imagePullSecrets:
