@@ -35,8 +35,6 @@ kind: Ingress
 metadata:
   name: netflix-next-ingress
   namespace: test
-  annotations:
-    nginx.ingress.kubernetes.io/ssl-passthrough: "true"
 spec:
   ingressClassName: nginx
   rules:
