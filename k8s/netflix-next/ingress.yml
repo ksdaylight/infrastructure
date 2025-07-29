@@ -35,6 +35,8 @@ kind: Ingress
 metadata:
   name: netflix-next-ingress
   namespace: test
+  annotations:
+    cert-manager.io/cluster-issuer: "cf-issuer"
 spec:
   ingressClassName: nginx
   rules:
